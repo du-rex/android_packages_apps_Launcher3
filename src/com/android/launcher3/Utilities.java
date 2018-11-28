@@ -154,6 +154,7 @@ public final class Utilities {
     public static final String LOCK_DESKTOP_KEY = "pref_lock_desktop";
     public static final String BOTTOM_SEARCH_BAR_KEY = "pref_bottom_search_bar";
     public static final String DATE_FORMAT_KEY = "pref_date_format";
+    public static final String DATE_STYLE_FONT = "pref_date_font";
 
     public static boolean isDesktopLocked(Context context) {
         return getPrefs(context).getBoolean(LOCK_DESKTOP_KEY, false);
@@ -264,6 +265,10 @@ public final class Utilities {
         return getPrefs(context).getString(DATE_FORMAT_KEY, context.getString(R.string.date_format_normal));
     }
 
+    public static String getDateStyleFont(Context context) {
+        return getPrefs(context).getString(DATE_STYLE_FONT, "google");
+    }
+
     public static String formatDateTime(Context context, long timeInMillis) {
         try {
             String format = getDateFormat(context);
@@ -296,6 +301,7 @@ public final class Utilities {
             Log.e(TAG, "Error formatting At A Glance date", t);
             return DateUtils.formatDateTime(context, timeInMillis, DateUtils.FORMAT_SHOW_WEEKDAY | DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_ABBREV_MONTH);
         }
+
     }
 
     /**
