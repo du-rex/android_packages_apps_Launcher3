@@ -155,6 +155,7 @@ public final class Utilities {
     public static final String BOTTOM_SEARCH_BAR_KEY = "pref_bottom_search_bar";
     public static final String DATE_FORMAT_KEY = "pref_date_format";
     public static final String DATE_STYLE_FONT = "pref_date_font";
+    public static final String DATE_STYLE_TRANSFORM = "pref_date_transform";
 
     public static boolean isDesktopLocked(Context context) {
         return getPrefs(context).getBoolean(LOCK_DESKTOP_KEY, false);
@@ -267,6 +268,10 @@ public final class Utilities {
 
     public static String getDateStyleFont(Context context) {
         return getPrefs(context).getString(DATE_STYLE_FONT, "google");
+    }
+
+    public static boolean isDateStyleUppercase(Context context) {
+        return getPrefs(context).getBoolean(DATE_STYLE_TRANSFORM, false);
     }
 
     public static String formatDateTime(Context context, long timeInMillis) {
