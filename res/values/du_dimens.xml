@@ -41,4 +41,9 @@
     <!-- QuickSpace -->
     <dimen name="quickspace_title_size">24dp</dimen>
 
+    <!-- Recents corners -->
+    <dimen name="task_corner_radius_default">2dp</dimen>
+    <dimen name="task_corner_radius_round">8dp</dimen>
+    <dimen name="task_corner_radius_op">16dp</dimen>
+
 </resources>

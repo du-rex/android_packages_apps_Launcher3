@@ -69,6 +69,7 @@ public class Gestures extends SettingsActivity
 
         private ListPreference mDoubleTapGestures;
         private ListPreference mSwipeDownGestures;
+        private ListPreference mCustomRecentsType;
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -93,6 +94,18 @@ public class Gestures extends SettingsActivity
                 KEY_HOMESCREEN_SWIPE_DOWN_GESTURES, "7"));
             mSwipeDownGestures.setSummary(mSwipeDownGestures.getEntry());
             mSwipeDownGestures.setOnPreferenceChangeListener(this);
+
+            SwitchPreference useCustomRecentsRound = (SwitchPreference) findPreference(Utilities.PREF_CUSTOM_RECENTS_ROUND_SWITCH);
+            useCustomRecentsRound.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+                }
+            });
+
+            mCustomRecentsType = (ListPreference) findPreference(Utilities.PREF_CUSTOM_RECENTS_ROUND_TYPE);
+            mCustomRecentsType.setValue(getDevicePrefs(mContext).getString(Utilities.PREF_CUSTOM_RECENTS_ROUND_TYPE, "0"));
+            mCustomRecentsType.setOnPreferenceChangeListener(this);
         }
 
         @Override
@@ -122,6 +135,12 @@ public class Gestures extends SettingsActivity
                         swipeDownGestureValue).commit();
                     mSwipeDownGestures.setValue(swipeDownGestureValue);
                     mSwipeDownGestures.setSummary(mSwipeDownGestures.getEntry());
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    break;
+                case Utilities.PREF_CUSTOM_RECENTS_ROUND_TYPE:
+                    String roundValue = (String) newValue;
+                    getDevicePrefs(mContext).edit().putString(Utilities.PREF_CUSTOM_RECENTS_ROUND_TYPE, roundValue).commit();
+                    mCustomRecentsType.setValue(roundValue);
                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     break;
             }

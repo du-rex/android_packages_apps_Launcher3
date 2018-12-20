@@ -157,6 +157,8 @@ public final class Utilities {
     public static final String DATE_STYLE_FONT = "pref_date_font";
     public static final String DATE_STYLE_TRANSFORM = "pref_date_transform";
     public static final String DATE_STYLE_SPACING = "pref_date_spacing";
+    public static final String PREF_CUSTOM_RECENTS_ROUND_SWITCH = "pref_custom_recents_corner_switch";
+    public static final String PREF_CUSTOM_RECENTS_ROUND_TYPE = "pref_custom_recents_corner_type";
 
     public static boolean isDesktopLocked(Context context) {
         return getPrefs(context).getBoolean(LOCK_DESKTOP_KEY, false);
@@ -188,6 +190,10 @@ public final class Utilities {
 
     public static int getHotseatIcons(Context context, int fallback) {
         return getIconCount(context, HOTSEAT_ICONS, fallback);
+    }
+
+    public static boolean useCustomRecentsRound(Context context) {
+        return getPrefs(context).getBoolean(PREF_CUSTOM_RECENTS_ROUND_SWITCH, false);
     }
 
     public static float getIconSizeModifier(Context context) {
@@ -244,6 +250,26 @@ public final class Utilities {
                 break;
         }
         return offset;
+    }
+
+    public static float getRecentsRoundType(Context context) {
+        String saved = getPrefs(context).getString(PREF_CUSTOM_RECENTS_ROUND_TYPE, "0");
+        float roundness;
+        switch (saved) {
+            case "0":
+                roundness = context.getResources().getDimension(R.dimen.task_corner_radius_default);
+                break;
+            case "1":
+                roundness = context.getResources().getDimension(R.dimen.task_corner_radius_round);
+                break;
+            case "2":
+                roundness = context.getResources().getDimension(R.dimen.task_corner_radius_op);
+                break;
+            default:
+                roundness = context.getResources().getDimension(R.dimen.task_corner_radius);
+                break;
+        }
+        return roundness;
     }
 
     private static int getIconCount(Context context, String preferenceName, int preferenceFallback) {
