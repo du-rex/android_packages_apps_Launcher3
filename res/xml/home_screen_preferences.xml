@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory
+        android:key="home_quickspace_category"
+        android:title="@string/home_quickspace_title">
+
     <SwitchPreference
         android:key="pref_show_quickspace"
         android:title="@string/show_quickspace_title"
@@ -45,6 +49,7 @@
         android:persistent="true"
         android:summary="%s"
         android:title="@string/date_style_spacing" />
+    </PreferenceCategory>
 
     <SwitchPreference
         android:key="pref_feed_integration"
