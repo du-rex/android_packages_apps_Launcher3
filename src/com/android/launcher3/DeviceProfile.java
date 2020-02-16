@@ -28,6 +28,7 @@ import android.view.Surface;
 import androidx.annotation.Nullable;
 
 import com.android.launcher3.CellLayout.ContainerType;
+import com.android.launcher3.config.FeatureFlags;
 import com.android.launcher3.graphics.IconShape;
 import com.android.launcher3.icons.DotRenderer;
 import com.android.launcher3.icons.IconNormalizer;
@@ -203,14 +204,15 @@ public class DeviceProfile {
 
         workspaceCellPaddingXPx = res.getDimensionPixelSize(R.dimen.dynamic_grid_cell_padding_x);
 
-        hotseatBarTopPaddingPx = Utilities.isBottomSearchBarVisible(context)
-                ? res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_top_padding)
-                : res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_top_padding_hidden_bottom_qsb);
-        hotseatBarBottomPaddingPx = Utilities.isBottomSearchBarVisible(context)
-                ? ((isTallDevice ? 0
-                : res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_bottom_non_tall_padding))
-                + res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_bottom_padding))
-                : res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_bottom_padding_hidden_bottom_qsb);
+        hotseatBarTopPaddingPx =
+                res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_top_padding);
+        hotseatBarBottomPaddingPx = (isTallDevice ? 0
+                : res.getDimensionPixelSize(FeatureFlags.HOTSEAT_WIDGET
+                        ? R.dimen.dynamic_grid_hotseat_bottom_non_tall_padding_widget
+                        : R.dimen.dynamic_grid_hotseat_bottom_non_tall_padding))
+                + res.getDimensionPixelSize(FeatureFlags.HOTSEAT_WIDGET
+                        ? R.dimen.dynamic_grid_hotseat_bottom_padding_widget
+                        : R.dimen.dynamic_grid_hotseat_bottom_padding);
 
         hotseatBarSidePaddingEndPx =
                 res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_side_padding);
@@ -218,7 +220,9 @@ public class DeviceProfile {
         hotseatBarSidePaddingStartPx = isVerticalBarLayout() ? verticalDragHandleSizePx : 0;
         hotseatBarSizePx = ResourceUtils.pxFromDp(inv.iconSize, dm) + (isVerticalBarLayout()
                 ? (hotseatBarSidePaddingStartPx + hotseatBarSidePaddingEndPx)
-                : (res.getDimensionPixelSize(R.dimen.dynamic_grid_hotseat_extra_vertical_size)
+                : (res.getDimensionPixelSize(FeatureFlags.HOTSEAT_WIDGET
+                        ? R.dimen.dynamic_grid_hotseat_extra_vertical_size_widget
+                        : R.dimen.dynamic_grid_hotseat_extra_vertical_size)
                         + hotseatBarTopPaddingPx + hotseatBarBottomPaddingPx));
 
         // Calculate all of the remaining variables.

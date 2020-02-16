@@ -87,6 +87,9 @@ public abstract class BaseFlags {
     // trying to make them fit the orientation the device is in.
     public static final boolean OVERVIEW_USE_SCREENSHOT_ORIENTATION = true;
 
+    // When enabled add space for a search widget in the dock.
+    public static final boolean HOTSEAT_WIDGET = false;
+
     /**
      * Feature flag to handle define config changes dynamically instead of killing the process.
      */

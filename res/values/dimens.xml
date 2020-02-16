@@ -232,8 +232,14 @@
     <dimen name="snackbar_min_text_size">12sp</dimen>
     <dimen name="snackbar_max_text_size">14sp</dimen>
 
-    <!-- Theming related -->
-    <dimen name="default_dialog_corner_radius">8dp</dimen>
-    <dimen name="dynamic_grid_hotseat_top_padding_hidden_bottom_qsb">8dp</dimen>
-    <dimen name="dynamic_grid_hotseat_bottom_padding_hidden_bottom_qsb">0dp</dimen>
+    <!-- Override padding with a hotseat widget. -->
+    <dimen name="dynamic_grid_hotseat_bottom_padding_widget">@dimen/dynamic_grid_hotseat_bottom_padding</dimen>
+    <dimen name="dynamic_grid_hotseat_bottom_non_tall_padding_widget">@dimen/dynamic_grid_hotseat_bottom_non_tall_padding</dimen>
+    <dimen name="dynamic_grid_hotseat_extra_vertical_size_widget">@dimen/dynamic_grid_hotseat_extra_vertical_size</dimen>
+
+    <!-- Icon pack -->
+    <dimen name="app_icon_size">65dp</dimen>
+    <dimen name="icon_pack_icon_size">48dp</dimen>
+    <dimen name="edit_dialog_min_width">200dp</dimen>
+    <dimen name="grid_item_spacing">15dp</dimen>
 </resources>
