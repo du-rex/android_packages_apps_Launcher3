@@ -192,8 +192,8 @@
     <!-- (touch_size - icon_size) / 2 -->
     <dimen name="system_shortcut_header_icon_padding">12dp</dimen>
 
-<!-- Notifications -->
-    <dimen name="bg_round_rect_radius">8dp</dimen>
+    <!-- Notifications -->
+    <dimen name="bg_round_rect_radius">@dimen/default_dialog_corner_radius</dimen>
     <dimen name="notification_padding_start">16dp</dimen>
     <dimen name="notification_padding_end">12dp</dimen>
     <!-- notification_padding_end + (icon_size - footer_icon_size) / 2 -->
