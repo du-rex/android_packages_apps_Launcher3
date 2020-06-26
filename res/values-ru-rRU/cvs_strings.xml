@@ -15,19 +15,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- General -->
-    <string name="settings_title">Corvus Settings</string>
+    <string name="settings_title">Настройки Corvus</string>
     <!-- Categories -->
-    <string name="home_category_title">Home screen</string>
-    <string name="home_category_summary">Set Google now panel and more</string>
-    <string name="icons_category_title">Icons</string>
-    <string name="icons_category_summary">Set icon shape and more</string>
-    <string name="gestures_category_title">Gestures</string>
-    <string name="gestures_category_summary">Double tap, swipe down and clear-all gestures</string>
-    <string name="gestures_other_category_title">Other</string>
-    <string name="misc_category_title">Miscellaneous</string>
-    <string name="misc_category_summary">Other options</string>
+    <string name="home_category_title">Домашний экран</string>
+    <string name="home_category_summary">Установить панель Google now и другое</string>
+    <string name="icons_category_title">Значки</string>
+    <string name="icons_category_summary">Настроить форму иконок и другое</string>
+    <string name="gestures_category_title">Жесты</string>
+    <string name="gestures_category_summary">Двойное касание, свайп вниз и очистить все жесты</string>
+    <string name="gestures_other_category_title">Другое</string>
+    <string name="misc_category_title">Разное</string>
+    <string name="misc_category_summary">Другие настройки</string>
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
-    <string name="title_show_google_app">Show Google app</string>
+    <string name="title_show_google_app">Показать приложение Google</string>
     <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
     <string name="msg_minus_one_on_left">When you swipe right from main home screen</string>
     <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
