@@ -48,47 +48,47 @@
     <string name="trust_apps_manager_name">Aplicaciones ocultas &amp; y protegidas</string>
     <string name="trust_apps_manager_name_dialog">Aplicaciones protegidas</string>
     <string name="trust_apps_auth_manager">Desbloquea para gestionar las aplicaciones ocultas</string>
-    <string name="trust_apps_auth_open_app">Authenticate to open %1$s</string>
-    <string name="trust_apps_loading">Loading\u2026</string>
-    <string name="trust_apps_no_lock_error">Please set up a secure lock screen to restrict app access</string>
-    <string name="trust_apps_help">Help</string>
-    <string name="trust_apps_info_hidden">Hidden apps and their widgets are hidden from the drawer</string>
-    <string name="trust_apps_info_protected">Protected apps require authentication to be opened from the launcher</string>
+    <string name="trust_apps_auth_open_app">Autenticar para abrir %1$s</string>
+    <string name="trust_apps_loading">Cargando\u2026</string>
+    <string name="trust_apps_no_lock_error">Por favor, configura un bloqueo de pantalla seguro para restringir el acceso a las aplicaciones</string>
+    <string name="trust_apps_help">Ayuda</string>
+    <string name="trust_apps_info_hidden">Las aplicaciones ocultas y sus widgets están ocultos del launcher</string>
+    <string name="trust_apps_info_protected">Las aplicaciones protegidas requieren autenticación para abrirse desde el lanzador</string>
     <!-- AppInfo -->
     <!-- Used for preference height loading. -->
     <!-- Custom icon pack as default. Can be empty -->
     <!-- Lock desktop -->
-    <string name="lock_desktop_title">Lock desktop</string>
-    <string name="lock_desktop_summary">Prevent the homescreen from being modified</string>
+    <string name="lock_desktop_title">Bloquear escritorio</string>
+    <string name="lock_desktop_summary">Evita que se modifique el escritorio</string>
     <!-- Icon size -->
-    <string name="icon_size_title">Icon size</string>
+    <string name="icon_size_title">Tamaño de los iconos</string>
     <!-- Grid -->
-    <string name="num_default">Default</string>
-    <string name="grid_category_title">Columns and rows</string>
-    <string name="number_of_columns_title">Grid and app drawer columns</string>
-    <string name="number_of_rows_title">Grid and app drawer rows</string>
-    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
-    <string name="state_loading">Applying\u2026</string>
-    <string name="allow_two_line_labels_title">Allow two line labels</string>
-    <string name="allow_two_line_labels_summary">For long app or folder names</string>
+    <string name="num_default">Por defecto</string>
+    <string name="grid_category_title">Columnas y filas</string>
+    <string name="number_of_columns_title">Columnas de la cuadricula y cajón de aplicaciones</string>
+    <string name="number_of_rows_title">Filas de la cuadricula y cajón de aplicaciones</string>
+    <string name="number_of_hotseat_title">Iconos de acceso rápido de pantalla de inicio</string>
+    <string name="state_loading">Aplicando\u2026</string>
+    <string name="allow_two_line_labels_title">Permitir etiquetas de dos líneas</string>
+    <string name="allow_two_line_labels_summary">Para los nombres largos de apps o carpetas</string>
     <!-- Gestures -->
-    <string name="allow_swipe_down_clearall_title">Clear all on swipe down from recents view</string>
-    <string name="allow_swipe_down_clearall_desc">Doesn\'t works if P navbar gestures are enable</string>
-    <string name="pref_notifications_gesture_title">Notifications gesture</string>
-    <string name="pref_notifications_gesture_summary">Swipe vertically downward on the home screen to show the QS panel</string>
-    <string name="pref_homescreen_dt_gestures_title">Double tap</string>
-    <string name="pref_homescreen_swipe_down_gestures_title">Swipe down</string>
-    <string name="pref_homescreen_gestures_none">None</string>
-    <string name="pref_homescreen_gestures_sleep">Screen off</string>
-    <string name="pref_homescreen_gestures_torch">Flashlight</string>
-    <string name="pref_homescreen_gestures_google">Google search</string>
-    <string name="pref_homescreen_dt_gestures_google_toast">Google search is not installed</string>
-    <string name="pref_homescreen_gestures_volume_panel">Volume panel</string>
-    <string name="pref_homescreen_gestures_clear_notifications">Clear notifications</string>
-    <string name="pref_homescreen_gestures_screenshot">Screenshot</string>
-    <string name="pref_homescreen_gestures_notifications">Notifications</string>
-    <string name="pref_homescreen_gestures_qs_panel">QS panel</string>
+    <string name="allow_swipe_down_clearall_title">Borrar todo al deslizar hacia abajo desde la pantalla de recientes</string>
+    <string name="allow_swipe_down_clearall_desc">No funciona si los gestos de la barra de navegación P están activados</string>
+    <string name="pref_notifications_gesture_title">Gestos en la barra de notificaciones</string>
+    <string name="pref_notifications_gesture_summary">Deslizar verticalmente hacia abajo para en la pantalla de inicio para mostrar el panel de ajustes rápidos</string>
+    <string name="pref_homescreen_dt_gestures_title">Doble toque</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Deslizar hacia abajo</string>
+    <string name="pref_homescreen_gestures_none">Ningúno</string>
+    <string name="pref_homescreen_gestures_sleep">Apagar la pantalla</string>
+    <string name="pref_homescreen_gestures_torch">Linterna</string>
+    <string name="pref_homescreen_gestures_google">Búsqueda de Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Aplicación de Google no instalada</string>
+    <string name="pref_homescreen_gestures_volume_panel">Panel de volumen</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Limpiar notificaciones</string>
+    <string name="pref_homescreen_gestures_screenshot">Captura de Pantalla</string>
+    <string name="pref_homescreen_gestures_notifications">Notificaciones</string>
+    <string name="pref_homescreen_gestures_qs_panel">Panel de ajustes rápidos</string>
     <!-- Show QSB on homescreen -->
-    <string name="pref_qsb_show_title">At A Glance</string>
-    <string name="pref_qsb_show_summary">Show At A Glance</string>
+    <string name="pref_qsb_show_title">De un vistazo</string>
+    <string name="pref_qsb_show_summary">Mostrar de un vistazo</string>
 </resources>
