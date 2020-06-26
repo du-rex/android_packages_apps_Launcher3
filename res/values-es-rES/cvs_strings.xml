@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- General -->
+    <string name="settings_title">Ajustes de Corvus</string>
+    <!-- Categories -->
+    <string name="home_category_title">Pantalla de inicio</string>
+    <string name="home_category_summary">Configura el panel de Google Now y más</string>
+    <string name="icons_category_title">Iconos</string>
+    <string name="icons_category_summary">Configura la forma, el tamaño de los iconos y más</string>
+    <string name="gestures_category_title">Gestos</string>
+    <string name="gestures_category_summary">Gestos de doble toque, deslizar hacia abajo y borrar todo</string>
+    <string name="gestures_other_category_title">Otro</string>
+    <string name="misc_category_title">Varios</string>
+    <string name="misc_category_summary">Otras opciones</string>
+    <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
+    <string name="title_show_google_app">Mostrar aplicación de Google</string>
+    <!-- Settings message explaining when the -1 screen is available on an LTR device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_left">Cuando deslizas a la derecha desde la pantalla de inicio</string>
+    <!-- Settings message explaining when the -1 screen is available on an RTL device. [CHAR LIMIT=100] -->
+    <string name="msg_minus_one_on_right">Cuando deslizas a la izquierda desde la pantalla de inicio</string>
+    <!-- QSB -->
+    <string name="label_search">Buscar</string>
+    <string name="label_voice_search">Búsqueda por voz</string>
+    <!-- SmartSpace -->
+    <!-- Gradients on Workspace/Hotseat -->
+    <string name="workspace_gradient_title">Mostrar gradiente en la parte superior</string>
+    <string name="workspace_gradient_summary">Activa un gradiente sutil desde la barra de estado</string>
+    <string name="hotseat_gradient_title">Mostrar gradiente en la parte inferior</string>
+    <string name="hotseat_gradient_summary">Activa un gradiente sutil desde el dock del lanzador</string>
+    <!-- Icon mask -->
+    <string name="legacy_icon_mask_title">Forzar forma en íconos antiguos</string>
+    <string name="legacy_icon_mask_summary">No permite que los iconos sean remodelados con máscara de iconos adaptativa. El pack de iconos debe ser reaplicado después de cambiar</string>
+    <!-- Trust apps -->
+    <string name="trust_apps_manager_name">Aplicaciones ocultas &amp; y protegidas</string>
+    <string name="trust_apps_manager_name_dialog">Aplicaciones protegidas</string>
+    <string name="trust_apps_auth_manager">Desbloquea para gestionar las aplicaciones ocultas</string>
+    <string name="trust_apps_auth_open_app">Autenticar para abrir %1$s</string>
+    <string name="trust_apps_loading">Cargando\u2026</string>
+    <string name="trust_apps_no_lock_error">Por favor, configura un bloqueo de pantalla seguro para restringir el acceso a las aplicaciones</string>
+    <string name="trust_apps_help">Ayuda</string>
+    <string name="trust_apps_info_hidden">Las aplicaciones ocultas y sus widgets están ocultos del launcher</string>
+    <string name="trust_apps_info_protected">Las aplicaciones protegidas requieren autenticación para abrirse desde el lanzador</string>
+    <!-- AppInfo -->
+    <!-- Used for preference height loading. -->
+    <!-- Custom icon pack as default. Can be empty -->
+    <!-- Lock desktop -->
+    <string name="lock_desktop_title">Bloquear escritorio</string>
+    <string name="lock_desktop_summary">Evita que se modifique el escritorio</string>
+    <!-- Icon size -->
+    <string name="icon_size_title">Tamaño de los iconos</string>
+    <!-- Grid -->
+    <string name="num_default">Por defecto</string>
+    <string name="grid_category_title">Columnas y filas</string>
+    <string name="number_of_columns_title">Columnas de la cuadricula y cajón de aplicaciones</string>
+    <string name="number_of_rows_title">Filas de la cuadricula y cajón de aplicaciones</string>
+    <string name="number_of_hotseat_title">Iconos de acceso rápido de pantalla de inicio</string>
+    <string name="state_loading">Aplicando\u2026</string>
+    <string name="allow_two_line_labels_title">Permitir etiquetas de dos líneas</string>
+    <string name="allow_two_line_labels_summary">Para los nombres largos de apps o carpetas</string>
+    <!-- Gestures -->
+    <string name="allow_swipe_down_clearall_title">Borrar todo al deslizar hacia abajo desde la pantalla de recientes</string>
+    <string name="allow_swipe_down_clearall_desc">No funciona si los gestos de la barra de navegación P están activados</string>
+    <string name="pref_notifications_gesture_title">Gestos en la barra de notificaciones</string>
+    <string name="pref_notifications_gesture_summary">Deslizar verticalmente hacia abajo para en la pantalla de inicio para mostrar el panel de ajustes rápidos</string>
+    <string name="pref_homescreen_dt_gestures_title">Doble toque</string>
+    <string name="pref_homescreen_swipe_down_gestures_title">Deslizar hacia abajo</string>
+    <string name="pref_homescreen_gestures_none">Ningúno</string>
+    <string name="pref_homescreen_gestures_sleep">Apagar la pantalla</string>
+    <string name="pref_homescreen_gestures_torch">Linterna</string>
+    <string name="pref_homescreen_gestures_google">Búsqueda de Google</string>
+    <string name="pref_homescreen_dt_gestures_google_toast">Aplicación de Google no instalada</string>
+    <string name="pref_homescreen_gestures_volume_panel">Panel de volumen</string>
+    <string name="pref_homescreen_gestures_clear_notifications">Limpiar notificaciones</string>
+    <string name="pref_homescreen_gestures_screenshot">Captura de Pantalla</string>
+    <string name="pref_homescreen_gestures_notifications">Notificaciones</string>
+    <string name="pref_homescreen_gestures_qs_panel">Panel de ajustes rápidos</string>
+    <!-- Show QSB on homescreen -->
+    <string name="pref_qsb_show_title">De un vistazo</string>
+    <string name="pref_qsb_show_summary">Mostrar de un vistazo</string>
+</resources>
