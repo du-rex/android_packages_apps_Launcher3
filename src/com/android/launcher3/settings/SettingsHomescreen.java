@@ -187,6 +187,14 @@ public class SettingsHomescreen extends SettingsActivity
                     return true;
                 }
             });
+
+            SwitchPreference showPrediction = (SwitchPreference) findPreference(Utilities.PREDICTION_KEY);
+            showPrediction.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    Utilities.restart(getActivity());
+                    return true;
+                }
+            });
         }
 
         @Override

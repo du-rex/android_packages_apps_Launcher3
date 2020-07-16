@@ -145,6 +145,7 @@ public final class Utilities {
     public static final String DESKTOP_SHOW_QSB = "pref_qsb_show";
     public static final String BOTTOM_SEARCH_BAR_KEY = "pref_bottom_search_bar";
     public static final String MINUS_ONE_KEY = "pref_enable_minus_one";
+    public static final String PREDICTION_KEY = "perf_prediction";
 
     /**
      * Indicates if the device has a debug build. Should only be used to store additional info or
@@ -659,6 +660,10 @@ public final class Utilities {
 
     public static boolean isBottomSearchBarVisible(Context context) {
         return getPrefs(context).getBoolean(BOTTOM_SEARCH_BAR_KEY, true);
+    }
+
+    public static boolean showPrediction(Context context) {
+        return getPrefs(context).getBoolean(PREDICTION_KEY, false);
     }
 
     public static float getIconSizeModifier(Context context) {

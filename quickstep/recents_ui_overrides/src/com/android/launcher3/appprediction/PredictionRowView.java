@@ -42,6 +42,7 @@ import com.android.launcher3.DeviceProfile.OnDeviceProfileChangeListener;
 import com.android.launcher3.ItemInfo;
 import com.android.launcher3.ItemInfoWithIcon;
 import com.android.launcher3.Launcher;
+import com.android.launcher3.Utilities;
 import com.android.launcher3.LauncherAppState;
 import com.android.launcher3.LauncherSettings;
 import com.android.launcher3.R;
@@ -117,7 +118,7 @@ public class PredictionRowView extends LinearLayout implements
     private final AnimatedFloat mOverviewScrollFactor =
             new AnimatedFloat(this::updateTranslationAndAlpha);
 
-    private boolean mPredictionsEnabled = false;
+    private boolean mPredictionsEnabled = Utilities.showPrediction(getContext());
 
     public PredictionRowView(@NonNull Context context) {
         this(context, null);
