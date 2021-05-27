@@ -240,7 +240,7 @@ public abstract class BaseDragLayer<T extends Context & ActivityContext>
             // This can happen if something goes wrong during a state change/transition.
             AbstractFloatingView floatingView = (AbstractFloatingView) child;
             if (floatingView.isOpen()) {
-                postDelayed(() -> floatingView.close(false), getSingleFrameMs(getContext()));
+                postDelayed(() -> floatingView.close(false), SINGLE_FRAME_MS);
             }
         }
     }
